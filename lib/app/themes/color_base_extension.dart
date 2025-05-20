@@ -12,6 +12,7 @@ class ColorBaseExtension extends ThemeExtension<ColorBaseExtension> {
   final Color? primaryActive;
   final Color? primaryTransparent;
   final Color? backgroundGrey;
+
   @override
   ThemeExtension<ColorBaseExtension> copyWith({
     Color? primary,
@@ -48,6 +49,6 @@ class ColorBaseExtension extends ThemeExtension<ColorBaseExtension> {
     primary: const Color(0xFF1379F0),
     primaryActive: const Color(0xFF086DE3),
     primaryTransparent: const Color(0x331379F0),
-    backgroundGrey: const Color(0xFFFDFDFD),
+    backgroundGrey: const Color(0xFFC9CEDA),
   );
 }
