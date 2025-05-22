@@ -2,10 +2,6 @@
 
 **Estudaê** é uma aplicação mobile desenvolvida em Flutter com o propósito de auxiliar estudantes na organização de sua vida acadêmica. A plataforma permite o registro de notas, provas e preferências de estudo, promovendo uma gestão mais eficiente do desempenho escolar.
 
-## 🎯 Propósito
-
-O Estudaê foi idealizado para oferecer ao estudante uma ferramenta prática, intuitiva e confiável para planejar seus estudos e acompanhar sua evolução acadêmica ao longo do tempo.
-
 ## 📦 Estrutura do Projeto
 
 O projeto segue uma arquitetura modular baseada em pastas funcionais. Abaixo, uma visão geral da estrutura principal:
