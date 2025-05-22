@@ -1,21 +1,35 @@
-import 'package:estudae_app/app/presentation/screens/home_screen.dart';
 import 'package:estudae_app/app/themes/app_theme.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:estudae_app/app/providers/theme_provider.dart';
+import 'package:estudae_app/app/presentation/screens/home_screen.dart';
 
 void main() {
-  runApp(const MainApp());
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => ThemeProvider(),
+      child: const MyApp(),
+    ),
+  );
 }
 
-class MainApp extends StatelessWidget {
-  const MainApp({super.key});
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      
-      theme: appTheme,
-      darkTheme: appThemeDark,
-      home: const HomeScreen(),
+    return ChangeNotifierProvider(
+      create: (context) => ThemeProvider(),
+      child: Consumer<ThemeProvider>(
+        builder: (context, themeProvider, child) {
+          return MaterialApp(
+            theme: getLightTheme(),
+            darkTheme: getDarkTheme(),
+            themeMode: themeProvider.themeMode,
+            home: const HomeScreen(),
+          );
+        },
+      ),
     );
   }
 }
