@@ -60,21 +60,19 @@ Contribuições são bem-vindas! Caso queira colaborar com o projeto:
 Realize um fork do repositório.
 Crie uma branch com sua funcionalidade ou correção:
 
-Padrão esperado
+   ```bash
+   git checkout -b minha-contribuicao
+   ```
+
+#### Padrão esperado nome de branchs
 
 Correções: Fix/Descricao-curta-correcao
 
 Funcionalidade nova: Feature/Descricao-curta-funcionalidade-nova
 
-   ```bash
-   git checkout -b minha-contribuicao
-   ```
+
 
 Após concluir, envie um Pull Request descrevendo as alterações realizadas.
 
 Pedimos que mantenha um padrão de código limpo, com comentários claros e compatibilidade com as funcionalidades existentes.
-
-## 📄 Licença
-
-Este projeto está licenciado sob a [Licença MIT](LICENSE). Você pode utilizá-lo, modificá-lo e distribuí-lo livremente, conforme os termos estabelecidos.
 
